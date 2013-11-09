@@ -118,9 +118,9 @@ var SampleApp = function() {
         self.app.use(__dirname + '/client');
 
         //  Add handlers for the app (from the routes).
-        for (var r in self.routes) {
-            self.app.get(r, self.routes[r]);
-        }
+        //for (var r in self.routes) {
+        //    self.app.get(r, self.routes[r]);
+        //}
     };
 
 
