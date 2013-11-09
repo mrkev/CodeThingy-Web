@@ -115,7 +115,17 @@ var SampleApp = function() {
         self.createRoutes();
         self.app = express.createServer();
 
-        self.app.use(__dirname + '/client');
+
+        self.app.configure(function(){
+          self.app.use(express.methodOverride());
+          self.app.use(express.bodyParser());
+          self.app.use(express.static(__dirname + '/public'));
+          self.app.use(express.errorHandler({
+            dumpExceptions: true, 
+            showStack: true
+          }));
+          self.app.use(self.app.router);
+        });
 
         //  Add handlers for the app (from the routes).
         //for (var r in self.routes) {
