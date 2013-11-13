@@ -1,20 +1,10 @@
-html { 
-background: black; 
-}
-body {
-  background: #333;
-  background: -webkit-linear-gradient(top, black, #666);
-  background: -o-linear-gradient(top, black, #666);
-  background: -moz-linear-gradient(top, black, #666);
-  background: linear-gradient(top, black, #666);
-  color: white;
-  font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
-  width: 40em;
-  margin: 0 auto;
-  padding: 3em;
-}
-a {
-  color: white;
+html { height: 100%; }
+body { margin: 0; height: 100%; position: relative; }
+.firepad { height: 100% !important; }
+#firepad-container {
+  position: absolute; left: 0; top: 0; bottom: 0; right: 0;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
