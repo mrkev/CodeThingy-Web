@@ -14,7 +14,7 @@ window.onload = function() {
         return "textmate"
       },
       defaultMode  : function () {
-        return "javascript"
+        return "python"
       }
     }
   };
